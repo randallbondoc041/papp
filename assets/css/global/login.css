@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial' sans-serif;
+}
+
+body {
+	background-color: #5e88b7;
+}
+.login-parent {
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+}
+
+.login-parent:after {
+	display: inline-block;
+	content: '';
+	height: 100%;
+	width: 0px;
+	vertical-align: middle;
+}
+
+.login-form {
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 30px;
+	width: 450px;
+	/*height: 430px;*/
+	vertical-align: middle;
+	padding-bottom: 30px;
+}
+
+
+.login-form form {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.login-form .form-group input {
+	border-radius: 5px;
+	padding: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	width: 100%;
+}
+
+.image-content {
+	height: 76px;
+	text-align: center;
+	width: 60%;
+	/*background-color: #faef5f;*/
+	margin: 30px auto;
+	margin-bottom: 50px;
+}
+.login-form .image-content img {
+	display: block;
+	padding-top: 20px;
+	margin: 10px auto;
+	width: 70%;
+	/*background-color: #faef5f;*/
+}
+
+.login-form form p {
+	font-family: Arial, sans-serif;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+
+
+.login-form form .form-group1 {
+	margin-top: 10px;
+}
+
+
+.login-form form .form-group2 {
+	margin-top: 10px;
+}
+.login-form input[type="password"] {
+	background-color: #d1deec;
+	border: 1px solid #d1deec;
+}
+.login-form input[type="password"]:focus {
+	background-color: #fff;
+	transition: .5s;
+}
+.login-form  form button {
+	margin-top: 10px;
+	padding: 10px 0;
+	width: 100%;
+}
+.login-form .forgot {
+	margin-top: 10px;
+}
+.login-form .forgot a {
+	color: #333;
+	text-decoration: none;
+	font-size: 15px;
+	margin-left: 10px;
+}
+.login-form .error {
+	background-color: #ff3f40;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.login-form .success {
+	background-color: #38782e;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+

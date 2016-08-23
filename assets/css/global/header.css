@@ -1,0 +1,178 @@
+header[custom-style~="header"]{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background-color: #d1deec;
+}
+
+header[custom-style~="header"]:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 100%;
+}
+
+header[custom-style~="header"] .w-logo{
+	width: 200px;
+}
+
+header[custom-style~="header"]>nav{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header[custom-style~="header"]>nav>ul{
+	padding: 0;
+	margin:0 15px;
+}
+
+header[custom-style~="header"]>nav>ul>li{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+header[custom-style~="header"]>nav>ul>li>a{
+	position: relative;
+	display: block;
+	padding: 5px 30px;
+	outline: none;
+}
+
+header[custom-style~="header"]>nav>ul>li>a>img{
+	opacity: 1;
+	transition: opacity .5s;
+}
+
+header[custom-style~="header"]>nav>ul>li>a:hover>img{
+	opacity: .5;
+	transition: opacity .5s;
+}
+
+header[custom-style~="header"]>nav>ul>li>a+div.sub-nav{
+	position: absolute;
+	margin-left: calc(50% - 15px);
+	width: 200px;
+	overflow: hidden;
+	max-height: 0;
+	opacity: 0;
+	z-index: 10;
+	transition: max-height .3s, opacity .3s;
+}
+
+header[custom-style~="header"]>nav>ul>li>a+div.sub-nav:before{
+	content: "";
+	display: block;
+	margin-left: 5px;
+	background: url(../../images/ui/top-sub-arrow.svg);
+	background-size: 15px 10px;
+	width: 15px;
+	height: 10px;
+}
+
+header[custom-style~="header"]>nav>ul>li>a:hover+div.sub-nav,
+header[custom-style~="header"]>nav>ul>li>a+div.sub-nav:hover{
+	opacity: 1;
+	max-height: 205px;
+	transition: all .5s;
+}
+
+header[custom-style~="header"]>nav>ul>li>div.sub-nav p{
+	position: relative;
+	padding: 5px 10px;
+	font-size: 15px;
+	color: #fff;
+	background-color: #516384;
+}
+
+header[custom-style~="header"]>nav>ul>li>div.sub-nav ul{
+	margin: 0;
+	padding: 0;
+	border-top: solid 1px #fff; 
+}
+
+header[custom-style~="header"]>nav>ul>li>div.sub-nav ul li{
+	display: block;
+	text-decoration: none;
+}
+
+header[custom-style~="header"]>nav>ul>li>div.sub-nav ul li a{
+	display: block;
+	padding: 5px 10px;
+	font-size: 12px;
+	text-transform: uppercase;
+	width: 100%;
+	background-color: #4a5b7b;
+	color: #fff;
+}
+
+header[custom-style~="header"]>nav>ul>li>div.sub-nav ul li a:hover{
+	background-color: #31456b;
+	text-decoration: none;
+}
+
+header[custom-style~="header"] .profile,
+header[custom-style~="header"] .log,
+header[custom-style~="header"] .down-key,
+header[custom-style~="header"] .bell {
+	float: right;
+	padding: 10px 20px;
+	height: 70px;
+	background-color: #516384;
+	text-decoration: none;
+
+	transition: background-color .5s;
+}
+header[custom-style~="header"] .profile {
+	position: relative;
+	width: 300px;
+}
+header[custom-style~="header"] .profile i {
+	position: absolute;
+	top: 20px;
+	right : 12px;
+}
+header[custom-style~="header"] .down-key i {
+	padding-top: 10px;
+}
+header[custom-style~="header"] .bell {
+	padding: 0px;
+	padding-top: 20px;
+	height: 100%;
+}
+header[custom-style~="header"] .bell i{
+	border-left: 1px dotted black;
+	border-right: 1px dotted black;
+	padding: 5px 20px;
+	font-size: 20px;
+	color : #fff;
+}
+
+header[custom-style~="header"] .log{
+	padding-top: 25px;
+	background-color: #516384;
+	color: #fff;
+}
+
+header[custom-style~="header"] .profile img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+}
+
+header[custom-style~="header"] .profile p{
+	margin: 0 5px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+header[custom-style~="header"] .profile:hover,
+header[custom-style~="header"] .log:hover,
+header[custom-style~="header"] .bell:hover {
+	background-color: #5f7398;
+	transition: background-color .5s;
+}

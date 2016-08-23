@@ -1,0 +1,348 @@
+section[section-style~="content-panel"]{
+	width: 100%;
+	background-color: #5e88b7;
+}
+
+section[section-style~="content-panel"] .content{
+	padding: 30px 0;
+	/*width: 100%;*/
+	width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+	/*min-height: calc(100vh - 240px);*/
+	min-height: calc(100vh - 182px);
+}
+
+section[section-style~="content-panel"] .content .data-box{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px;
+	margin: 5px;
+	background-color: #fff;
+}
+
+section[section-style~="content-panel"] .content  .data-box {
+	background-color: #d1deec;
+}
+section[section-style~="content-panel"] .content .data-two:nth-of-type(4n) {
+	background-color: #f0f0f0;
+}
+section[section-style~="content-panel"] .content .data-two:nth-of-type(4n+1) {
+	background-color: #f0f0f0;
+}
+
+@media(min-width: 1280px){
+	section[section-style~="content-panel"] .content .data-box{
+		width: calc((100% / 3) - 13px);
+	}
+}
+
+@media(max-width: 1280px){
+	section[section-style~="content-panel"] .content .data-box{
+		width: calc((100% / 2) - 13px);
+	}
+}
+
+section[section-style~="content-panel"] .content .data-box h3{
+	margin: 10px 0;
+}
+
+section[section-style~="content-panel"] .content .data-box .data-hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	opacity: 0;
+
+	transition: opacity .5s;
+}
+
+section[section-style~="content-panel"] .content .data-box:hover .data-hover{
+	opacity: 1;
+
+	transition: opacity .5s;
+}
+
+section[section-style~="content-panel"] .content .data-box .data-hover:after{
+	content: "";
+	display: inline-block;
+	vertical-align: middle; 
+	width: 0;
+	height: 100%;
+	height: 100%;
+}
+section[section-style~="content-panel"] .content .data-box .triangle {
+	position: absolute;
+	top: -6px;
+	right: -26px;
+
+}
+
+section[section-style~="content-panel"] .content .option-box {
+	background-color: #98b1d0;
+	display: inline-block;	
+	
+	text-align: center;
+	vertical-align: middle;	
+	margin: 5px;
+	width: calc((100% / 4) - 13px);
+}
+
+section[section-style~="content-panel"] .content .option-box.trio{ 
+	width: calc((100% / 3) - 13px); 
+} 
+ 
+
+section[section-style~="content-panel"] .content .option-box .title {
+	background-color: #d1deec;
+	font-size: 18px;
+	padding: 20px;	
+	text-transform: uppercase;
+}
+section[section-style~="content-panel"] .content .option-box .description {
+	background-color: #fff;	
+	color: #646464;
+	font-size: 20px;
+	padding: 20px;
+}
+
+
+section[section-style~="content-panel"] .content .table-roxas {
+	font-size: 15px;
+	width: 100%;
+
+}
+section[section-style~="content-panel"] .content .table-roxas th, 
+section[section-style~="content-panel"] .content .table-roxas td {
+	padding: 10px;
+	text-align: center;
+}
+
+section[section-style~="content-panel"] .content .table-roxas td:nth-of-type(1n+2){ 
+	border-left: solid 1px #929cb5; 
+} 
+ 
+section[section-style~="content-panel"] .content .table-roxas tr.last-content td:nth-of-type(1n+2){ 
+	border-left: none; 
+}
+
+section[section-style~="content-panel"] .content .table-roxas th {
+	background-color: #2e4c6e;
+	color: #fff;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+section[section-style~="content-panel"] .content .table-roxas tr:nth-child(even) { background-color: #adc4dd; }
+section[section-style~="content-panel"] .content .table-roxas tr:nth-child(odd) { background-color: #ffffff; }
+section[section-style~="content-panel"] .content .table-roxas .last-content {
+	background-color: #2e4c6e !important;
+	color: #f8f8f8;
+}
+section[section-style~="content-panel"] .content .table-roxas .last-content .combine { position: relative; }
+section[section-style~="content-panel"] .content .table-roxas .last-content .combine .total-text {
+	position: absolute;
+	left: 20%;
+}
+
+section[section-style~="content-panel"] .content .long-panel {
+	background-color: #d1deec;	
+	padding: 15px;
+
+}
+section[section-style~="content-panel"] .content .long-panel .first-text { float: left; font-size: 18px; }
+section[section-style~="content-panel"] .content .long-panel .second-text { float: right; font-size: 18px; }
+
+
+/* user - profile */
+section[section-style~="content-panel"] .user-profile { text-align: center; width: 100%; }
+section[section-style~="content-panel"] .user-profile .user-image,
+section[section-style~="content-panel"] .user-profile .user-name,
+section[section-style~="content-panel"] .user-profile .user-info { display: inline-block; vertical-align: middle; }
+section[section-style~="content-panel"] .user-profile .user-image {
+	border-radius: 50%;
+	height: 105px;
+	margin-right: 20px;
+	overflow: hidden;
+	width: 105px;
+}
+section[section-style~="content-panel"] .user-profile .user-image img { height: 105px; width: 105px; }
+section[section-style~="content-panel"] .user-profile .user-name {
+	border-right: 1px solid #fff;
+	color: #f8f8f8;
+	margin-right: 10px;
+	padding-right: 30px;
+}
+section[section-style~="content-panel"] .user-profile .user-name .name { font-weight: bold; font-size: 20px; }
+section[section-style~="content-panel"] .user-profile .user-name .position { font-size: 18px; }
+section[section-style~="content-panel"] .user-profile .user-info { padding-left: 20px; }
+section[section-style~="content-panel"] .user-profile .user-info table {
+	color: #f8f8f8;
+	font-size: 15px;
+	text-align: left;
+}
+section[section-style~="content-panel"] .user-profile .user-info table tr td { padding: 3px 0px; }
+section[section-style~="content-panel"] .user-profile .user-info table tr td:last-child { padding-left: 30px; }
+
+/* employee form */
+section[section-style~="content-panel"] .emp-form {
+	padding: 30px;
+	background-color: #fff;
+}
+section[section-style~="content-panel"] .emp-form .title-form {
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+section[section-style~="content-panel"] .emp-form .emp-table { 
+	margin-top: 30px;
+	width: 100%;
+}
+section[section-style~="content-panel"] .emp-form .emp-table tr td {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+section[section-style~="content-panel"] .emp-form .numbers { margin: 30px 0px; }
+section[section-style~="content-panel"] .emp-form .numbers p { 
+	font-size: 20px;
+	font-weight: bold;
+}
+section[section-style~="content-panel"] .emp-form .complex-info {
+	width: 80%;
+	margin: 0 auto;
+}
+section[section-style~="content-panel"] .emp-form .complex-info table {
+	width: 100%;
+	text-align: center;
+	margin: 30px 0px;
+}
+section[section-style~="content-panel"] .emp-form .complex-info table tr td {
+	/*border: 1px solid black;*/
+	padding: 10px 80px;
+	width: 300px;
+}
+section[section-style~="content-panel"] .emp-form .complex-info .line {
+	border-top: 1px solid black;
+	margin: 10px 0px;
+}
+section[section-style~="content-panel"] .emp-form .divider {
+	border-top: 1px dashed black;
+}
+section[section-style~="content-panel"] .emp-form .authorized {
+	font-size: 20px;
+	text-align: center;
+	margin: 30px 0; 
+	font-weight: bold;
+}
+section[section-style~="content-panel"] .emp-form .long-text {
+	text-indent: 50px;
+	font-size: 15px;
+	line-height: 25px;
+}
+section[section-style~="content-panel"] .emp-form .approved {
+	font-size: 15px;
+	margin: 40px 0;
+}
+section[section-style~="content-panel"] .emp-form .incharge {
+	width: 300px;
+	text-align: center;
+}
+section[section-style~="content-panel"] .emp-form .incharge p {  
+	border-top: 1px solid black;
+	padding-top: 20px;
+	margin-top: 50px;
+}
+
+/* offer letter */
+section[section-style~="content-panel"] .content .offer-letter {
+	background-color: #fff;
+	font-size: 15px;
+	padding: 30px;
+	min-height: 500px;
+}
+section[section-style~="content-panel"] .content .offer-letter .text-content {
+	text-align: justify;
+	text-indent: 30px;
+}
+section[section-style~="content-panel"] .content .offer-letter li { font-weight: bold; }
+section[section-style~="content-panel"] .content .inside-list { 
+	margin: 20px 0px;
+	text-align: justify;
+}
+section[section-style~="content-panel"] .content .table-offer {
+	width: 100%;
+}
+section[section-style~="content-panel"] .content .table-offer tr th,
+section[section-style~="content-panel"] .content .table-offer tr td {
+	padding: 3px;
+	text-align: center;
+	border: 1px solid #333;
+}
+section[section-style~="content-panel"] .content .table-offer tr th {
+	background-color: #e4e4e4;
+}
+
+/* accordion */
+section[section-style~="content-panel"] .panel-group .panel-heading{ 
+	border-radius: 0; 
+	background-color: #2e4c6e; 
+}
+
+section[section-style~="content-panel"] .panel-group .panel-heading h4 {
+	position: relative;
+}
+section[section-style~="content-panel"] .panel-group .panel-heading h4 .font-left {
+	position: absolute;
+	left: -14px;
+	color: #1a2d42;
+	font-size: 25px;
+	top: -4px;
+	overflow: hidden; 
+	width: 22px; 
+ 
+	transition: width .3s; 
+	
+}
+section[section-style~="content-panel"] .panel-group h4 .font-right {
+	position: absolute;
+	font-size: 30px;
+	top: 15px;
+	left: 23px;
+	color: #2e4c6e;
+}
+section[section-style~="content-panel"] .panel-group .panel-body {
+	border-top: none !important;
+}
+
+section[section-style~="content-panel"] .content .big-box {
+	background-color: #d1deec;
+	padding: 10px;
+}
+
+section[section-style~="content-panel"] .content .big-box table {
+	width: 100%;
+}
+section[section-style~="content-panel"] .content .big-box table tr td {
+	padding: 5px;
+	text-align: center;
+	font-size: 15px;
+}
+
+section[section-style~="content-panel"] .content .fake-table:nth-of-type(even) {
+	background-color: #f0f0f0;
+}
+
+section[section-style~="content-panel"] .content .letter-head {
+	background-color: #577ba4;
+	color: #fff;
+	font-size: 20px;
+	padding: 15px;
+}
+section[section-style~="content-panel"] .content .letter-content {
+	padding: 30px;
+	background-color: #fff;
+}

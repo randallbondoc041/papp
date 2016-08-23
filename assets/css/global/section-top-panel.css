@@ -1,0 +1,75 @@
+section[section-style~="top-panel"]{
+	width: 100%;
+	background-color: #5e88b7;
+}
+
+section[section-style~="top-panel"] .content{
+	width: 100%;
+	/*padding: 50px 15px 15px;*/
+	padding: 50px 0px 15px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+section[section-style~="top-panel"] .content .breadcrumbs{
+	width: 100%;
+	padding: 10px 20px;
+	background-color: #d1deec;
+}
+
+section[section-style~="top-panel"] .content .breadcrumbs a,
+section[section-style~="top-panel"] .content .breadcrumbs p{
+	color: #1f294c;
+}
+
+
+/* profile picture - view-personal-stock.php */
+section[section-style~="top-panel"] .user-profile {
+	text-align: center;
+	width: 100%;
+}
+section[section-style~="top-panel"] .user-profile .user-image,
+section[section-style~="top-panel"] .user-profile .user-name,
+section[section-style~="top-panel"] .user-profile .user-info {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+section[section-style~="top-panel"] .user-profile .user-image {
+	border-radius: 50%;
+	height: 105px;
+	margin-right: 20px;
+	overflow: hidden;
+	width: 105px;
+}
+section[section-style~="top-panel"] .user-profile .user-image img {
+	height: 105px;
+	width: 105px;
+}
+section[section-style~="top-panel"] .user-profile .user-name {
+	border-right: 1px solid #fff;
+	color: #f8f8f8;
+	margin-right: 10px;
+	padding-right: 30px;
+}
+section[section-style~="top-panel"] .user-profile .user-name .name {
+	font-weight: bold;
+	font-size: 20px;
+}
+section[section-style~="top-panel"] .user-profile .user-name .position {
+	font-size: 18px;	
+}
+section[section-style~="top-panel"] .user-profile .user-info {
+	padding-left: 20px;
+}
+section[section-style~="top-panel"] .user-profile .user-info table {
+	color: #f8f8f8;
+	font-size: 15px;
+	text-align: left;
+}
+section[section-style~="top-panel"] .user-profile .user-info table tr td {
+	padding: 3px 0px;
+}
+section[section-style~="top-panel"] .user-profile .user-info table tr td:last-child {
+	padding-left: 30px;
+}
