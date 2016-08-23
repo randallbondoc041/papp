@@ -1,12 +1,12 @@
 
-    <p>
+    <!-- <p>
         <a href="<?php echo base_url(); ?>">Home</a> | 
         <a href="<?php echo base_url(); ?>">Menu</a> | 
         <a href="<?php echo base_url(); ?>">Virtual Library</a> | 
         <a href="<?php echo base_url(); ?>">PAPP Accreditation</a> | 
         <a href="<?php echo base_url(); ?>">Contact Us</a> | 
         <a href="<?php echo base_url(); ?>">About Us</a>
-    </p>
+    </p> -->
     <p>Copyright &copy; RA Bondoc</p>
 
     <!-- javascript at the bottom for fast page loading -->
@@ -31,18 +31,6 @@
         
         // $("select:not([multiple])").transformDD();
         
-        // $("#nav").off('mouseover').on('mouseover', function (e){
-
-        //     console.log($(e.target).attr('class'))
-        //     if(!$(e.target).hasClass('nav_close'))
-        //     {
-        //         if(!$(e.target).hasClass('trigger'))
-        //         {
-        //             console.log('asd')
-        //             // $('#mainNavButton').attr('checked', false);;
-        //         }
-        //     }
-        // });
         moment.lang('en');
 
     </script>

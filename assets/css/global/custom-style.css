@@ -2063,6 +2063,10 @@ ol li {
   padding: 0px;
 }
 #nav ul li a {
+  width: 55px;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   display: block;
   font-weight: bold;
   padding: .7em;
@@ -2076,12 +2080,16 @@ ol li {
 #nav ul li a:hover {
   /*background: #0d8253;*/
   color:white;
+  overflow: visible;
+  width: auto;
 }
 #nav ul li:last-of-type a {
   border-right: 0px;
 }
 #nav ul li ul li a {
   padding-left: 1.5em;
+  overflow: visible;
+  width: auto;
 }
 #nav ul li ul li ul li a {
   padding-left: 3.125em;
@@ -2130,6 +2138,9 @@ ol li {
   color: #5E5E5E;
 }
 @media (min-width: 48em) {
+  #nav{
+    text-align: center;
+  }
   #nav ul {
     /* older flexbox */
     display: -ms-flexbox;
@@ -2146,7 +2157,6 @@ ol li {
   }
   #nav ul li {
     position: relative;
-    text-align: center;
     /* older flexbox */
     -ms-flex: 1;
     -webkit-box-flex: 1;
@@ -2180,5 +2190,24 @@ ol li {
   }
   #nav label {
     display: none;
+  }
+}
+
+@media (max-width: 48.1em){
+  #nav ul li a {
+    width: auto;
+    display: block;
+    font-weight: bold;
+    padding: .7em;
+    background: #88E2F8;
+    color: #5E5E5E;
+    text-decoration: none;
+    /*border-right: 1px solid #0a6b44;*/
+    font-family: 'trebuchet ms',helvetica,arial,verdana,sans;
+    margin-right: 2px;
+  }
+  #nav ul li a:hover {
+    /*background: #0d8253;*/
+    color:white;
   }
 }
